@@ -62,3 +62,37 @@ console.log(client.age);//appelle de l'age client//
 console.log(client.scores);//appelle du score client//
 console.log(client.scores[1]);//appelle du score[1] client//
 
+let joueurProfessionnel = {
+    nom: "Zinesine Yazid Zidane",
+    nationalité1: "Française",
+    nationalité2: "algérienne",
+    dateNaissance: "23/06/1972",
+    taille: 1.85,
+    piedFort: "Droit",
+    poste: "Millieu offensif",
+}; //création d'un objet joueur//
+
+console.log(joueurProfessionnel);
+console.log("C'est un grand jour son nom est", joueurProfessionnel.nom);
+console.log("il est de nationalité", joueurProfessionnel.nationalité1, "et", joueurProfessionnel.nationalité2);
+console.log("né en", joueurProfessionnel.dateNaissance);
+console.log("il mesure", joueurProfessionnel.taille, "métres");
+console.log("son pied le plus puissant lors d'un match et le", joueurProfessionnel.piedFort);
+console.log("son poste au terrain", joueurProfessionnel.poste);
+
+let deputerMayotte = {
+    nom: "MANSOUR",
+    prenom: "Kamardine",
+    village: "Mangajou",
+    dateNaissance: "23/03/1959",
+    age: 66,
+    profession: "Avocat",
+};
+
+console.log(deputerMayotte);
+console.log(deputerMayotte.nom);
+console.log(deputerMayotte.prenom);
+console.log(deputerMayotte.village);
+console.log(deputerMayotte.dateNaissance);
+console.log(deputerMayotte.age,"ans");
+console.log(deputerMayotte.profession);
