@@ -10,3 +10,4 @@ affichageTotalLivres+= totalLivres;
 affichageTotalLivres+= " livres au total."
 
 console.log(affichageTotalLivres);
+ 
