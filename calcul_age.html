@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul âge</title>
+    <link href="calcul_age.css" rel="stylesheet">
+    <script src="calcul_age.js"></script>
+</head>
+<body>
+    <form>
+            <h2>formulaire</h2>
+
+            <div>
+                <label>Nom</label>
+                <input type="nom" name="nom" id="nom">
+
+                <label>Prénom</label>
+                <input type="prenom" name="prenom" id="prenom">
+            </div>
+
+            <br><br>
+            
+            <label>situation:</label>
+      
+            <div>
+                <input type="checkbox" id="etudiant" name="etudiant">
+                <label for="etudiant">étudiant</label>
+      
+                <input type="checkbox" id="salarier" name="salarier">
+                <label for="salarier">Salarié</label>
+            </div>
+
+            <br><br>
+
+            <div>
+                <label>Année de naissance:</label>
+                <!--choix de la date de naissance-->
+                <input type="date" name="anneeNaissance" id="anneeNaissance">
+                
+                <label>Âge:</label>
+                <input type="autoNumber" name="age" id="age">
+            </div>
+            <br><br><br><br><br>
+    </form>
+</body>
+</html>

@@ -1,0 +1,27 @@
+body{
+    text-align:center;
+}
+
+div{
+    display: inline;
+}
+
+body{
+    background-color: rgba(180, 235, 14, 0.72);
+    
+}
+
+input[type=text], input[type=date]{
+    /*elle permet de modifier la taille de la valeur input de type texte*/
+    padding: 5px;
+     
+    margin: 7px; 
+    /*la valeur margin permet d'agrandire la marge du fichier en presisent la balise*/
+
+    border: 5px;
+    border-radius: 5px;
+}
+
+h1{
+    font-size: 150px;
+}
