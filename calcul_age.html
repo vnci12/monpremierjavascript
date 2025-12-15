@@ -7,13 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calcul âge</title>
     <link href="calcul_age.css" rel="stylesheet">
-    <script src="calcul_age.js"></script>
+    <script src="dom.js" defer></script>
 </head>
 <body>
     <form>
             <h2>formulaire</h2>
 
-            <div>
+            <p id="arret">arrête</p>
+
+            <div id="ae">
                 <label>Nom</label>
                 <input type="nom" name="nom" id="nom">
 
@@ -36,14 +38,17 @@
             <br><br>
 
             <div>
-                <label>Année de naissance:</label>
+                <label for="anneeNaissance">Année de naissance:</label>
                 <!--choix de la date de naissance-->
-                <input type="date" name="anneeNaissance" id="anneeNaissance">
+                <input type="number" id="anneeNaissance" placeholder="aaaa">
                 
-                <label>Âge:</label>
-                <input type="autoNumber" name="age" id="age">
+                <label for="age">Âge:</label>
+                <input type="number" id="age" readonly>
             </div>
             <br><br><br><br><br>
+
+            <input type="button" value="valider" id="boutonValider">
     </form>
+<script src="calcul_age.js" defer></script>
 </body>
 </html>
