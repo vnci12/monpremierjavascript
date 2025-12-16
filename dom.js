@@ -48,3 +48,20 @@ console.log(elementParagrapheArret);
  * getElementById est une methode qui permet de cibler un element par son id sans utiliser le #.
  * querySelector est une methode qui permet de cibler un element par son id en utilisant le #.
 */
+
+//j'affiche la liste des communes
+let elementListeCommunes = document.querySelector("#listeCommunes");
+console.log(elementListeCommunes);
+
+//j'affiche chaque commune une par une avec une boucle FOR
+
+for(let i = 0; i < elementListeCommunes.children.length; i++){
+    console.log("commune n°", i, ":", elementListeCommunes.children[i].textContent);
+};
+
+//juste une autre methode pour afficher chaque commune une par une avec une boucle FOR avec querySelectorAll
+
+let elelmentClassCommune = document.querySelectorAll(".commune");
+for (let i = 0; i < elelmentClassCommune.length; i++){
+    console.log(elelmentClassCommune[i]);
+};
