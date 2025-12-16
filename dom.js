@@ -65,3 +65,47 @@ let elelmentClassCommune = document.querySelectorAll(".commune");
 for (let i = 0; i < elelmentClassCommune.length; i++){
     console.log(elelmentClassCommune[i]);
 };
+
+/**
+ * j'insère des balises dans le fichier HTML grace a la manipulation du DOM en JS
+*/
+//je crée un element (balise) nommée section
+let elementSection = document.createElement("section");
+
+//je cible le body du document HTML puis je le stocke dans une variable JS elementBody
+let elementBody = document.querySelector("body");
+
+//j'insere la balise section dans le body
+elementBody.appendChild(elementSection);
+//je crée une balise h3
+let nouveauTitre = document.createElement("h3");
+//je lui ajoute du texte
+nouveauTitre.textContent = "Titre inséré en JS";
+//j'insere le titre dans la section
+elementSection.appendChild(nouveauTitre);
+
+//je crée une balise maman
+let elementMaman = document.createElement("maman");
+
+elementBody.appendChild(elementMaman);
+//je crée une balise h3
+let nouveauTitre1 = document.createElement("h3");
+//je lui ajoute du texte
+nouveauTitre1.textContent = "bonjour maman";
+
+elementMaman.appendChild(nouveauTitre1);
+
+//je crée une balise img
+let elementImg = document.createElement("img");
+//je lui ajoute un attribut src
+elementImg.src = "madara.jpg";
+elementImg.setAttribute("alt", "image de madara uchiwa");
+elementImg.className = "image-madara";
+elementImg.classList.add("image", "image-uchiha");
+
+//supprimer une classe de l'element img
+elementImg.classList.remove("image-madara");
+
+//j'insere l'image dans le body
+elementBody.appendChild(elementImg);
+
