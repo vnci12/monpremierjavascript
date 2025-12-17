@@ -18,5 +18,6 @@ const maDate = new Date();
 elementValiderDate.addEventListener("click", function() {
     //je decris laction au clic du bouton, wqj'insere la date du jour dans le span
     elementSpanDateDuJour.textContent = dateActuelle.toLocaleString();
+    
     elementSpanDateduJourFormat2.textContent = maDate.toLocaleDateString();
 });
