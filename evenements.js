@@ -53,5 +53,6 @@ elementInputNomForm.addEventListener("change", (event) => {
     console.log("nouvelle valeur :", event.target.value);
     messageSalutation = `Bonjours ${event.target.value}`; // j'affecte une valeur à la variable vide.
     elementSpanNomUtilisateur.textContent = messageSalutation;
+    //j'affiche le message de salutation dans le span correspondant
 });
 
