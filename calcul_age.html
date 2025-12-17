@@ -8,9 +8,21 @@
     <title>Calcul âge</title>
     <link href="calcul_age.css" rel="stylesheet">
     <script src="dom.js" defer></script>
+    <script src="evenements.js" defer></script>
 </head>
 <body>
     <article>
+        <!-- insertion de la date et de l'heure -->
+        <div id="date" class="date">
+            <button id="validerDate">Date du jour</button>
+            <span id="dateDuJour"></span>
+            <br>
+            <span id="dateduJourFormat2">
+                <p id="dateduJourFormat2">
+                    date format local
+                </p>
+            </span>
+        </div>
         <!-- listes des communes de mayotte -->
         <h3 id="Communes">Communes de mayotte:</h3>
         <ol id="listeCommunes">
@@ -42,7 +54,7 @@
             <div id="ae">
                 <label>Nom</label>
                 <input type="nom" name="nom" id="nom">
-
+                
                 <label>Prénom</label>
                 <input type="prenom" name="prenom" id="prenom">
             </div>

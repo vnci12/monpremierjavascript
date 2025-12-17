@@ -108,4 +108,3 @@ elementImg.classList.remove("image-madara");
 
 //j'insere l'image dans le body
 elementBody.appendChild(elementImg);
-
