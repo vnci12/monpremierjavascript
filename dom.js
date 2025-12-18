@@ -61,9 +61,9 @@ for(let i = 0; i < elementListeCommunes.children.length; i++){
 
 //juste une autre methode pour afficher chaque commune une par une avec une boucle FOR avec querySelectorAll
 
-let elelmentClassCommune = document.querySelectorAll(".commune");
-for (let i = 0; i < elelmentClassCommune.length; i++){
-    console.log(elelmentClassCommune[i]);
+let elementClassCommune = document.querySelectorAll(".commune");
+for (let i = 0; i < elementClassCommune.length; i++){
+    console.log(elementClassCommune[i]);
 };
 
 /**
@@ -84,7 +84,7 @@ nouveauTitre.textContent = "Titre inséré en JS";
 //j'insere le titre dans la section
 elementSection.appendChild(nouveauTitre);
 
-//je crée une balise maman
+//je crée une balise maman 
 let elementMaman = document.createElement("maman");
 
 elementBody.appendChild(elementMaman);

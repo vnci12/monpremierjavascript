@@ -56,3 +56,30 @@ elementInputNomForm.addEventListener("change", (event) => {
     //j'affiche le message de salutation dans le span correspondant
 });
 
+ /**
+  * Envoyer le formulaire
+  * je recupere les données saisies dans un formulaire et j'affiches les données dans la console.
+  * -nom
+  * -prenom
+  * -age
+  * -situation matrimoniale
+*/
+//je recupere la balise form avec ces enfants, ensuite je stock la balise form dans la variable elementForm
+let elementForm = document.querySelector(`form`);
+
+//j'associe l'evenement submit à la balise form
+elementForm.addEventListener("submit", (event) => {
+    event.preventDefault(); 
+    // j'empêche le comportement par défaut du formulaire (rechargement de la page).
+    console.log("evenement submit déclenché");
+
+    const nom = document.querySelector("#nom").value;
+    console.log("Nom :", nom);
+    const prenom = document.querySelector("#prenom").value;
+    console.log("Prénom :", prenom);
+    const age = document.querySelector("#age").value;
+    console.log("Âge :", age); 
+    let situationEtudiant = document.querySelector("#situation1").value;
+    let situationSalarier = document.querySelector("#situation2").value;
+    console.log("Situation matrimoniale :", situationEtudiant, situationSalarier);
+});
