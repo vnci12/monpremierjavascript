@@ -67,6 +67,12 @@ elementInputNomForm.addEventListener("change", (event) => {
 //je recupere la balise form avec ces enfants, ensuite je stock la balise form dans la variable elementForm
 let elementForm = document.querySelector(`form`);
 
+//recuperation de la situation
+let radioSituationEtudiant = document.getElementById("situation1");
+let radioSituationSalarier = document.getElementById("situation2");
+let divSituation = document.getElementById("situationUtilisateur");
+let situationTexte = document.getElementById("situationTexte");
+
 //j'associe l'evenement submit à la balise form
 elementForm.addEventListener("submit", (event) => {
     event.preventDefault(); 
@@ -78,8 +84,18 @@ elementForm.addEventListener("submit", (event) => {
     const prenom = document.querySelector("#prenom").value;
     console.log("Prénom :", prenom);
     const age = document.querySelector("#age").value;
-    console.log("Âge :", age); 
-    let situationEtudiant = document.querySelector("#situation1").value;
-    let situationSalarier = document.querySelector("#situation2").value;
-    console.log("Situation matrimoniale :", situationEtudiant, situationSalarier);
-});
+    console.log("Âge :", age, "ans"); 
+    console.log("Situation :", situationTexte.textContent);
+})
+
+function afficherSituation() {
+    if (radioSituationEtudiant.checked) {
+        situationTexte.textContent = "Étudiant";}
+    else if (radioSituationSalarier.checked) {
+        situationTexte.textContent = "Salarié";}
+}
+radioSituationEtudiant.addEventListener("change", afficherSituation);
+radioSituationSalarier.addEventListener("change", afficherSituation);
+console.log("Situation initiale :", situationTexte.textContent);
+
+

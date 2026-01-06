@@ -3,17 +3,17 @@
  */
 let elementBoutonValider = document.getElementById("boutonValider");
 
-elementBoutonValider.addEventListener("click", function () {
+elementBoutonValider.addEventListener("click",function () {
     console.log("elementBoutonValider :", elementBoutonValider);
 });
 
 console.log(document.getElementById("nom"));
 
 /**
- * je recupere un elelment (une balise) situe dans le fichier HTML (calcule_age.html). j'utilise son ID pour le cibler est en suite stocker dans une variable JS elementBoutonValider
+ * je recupere un element (une balise) situe dans le fichier HTML (calcule_age.html). j'utilise son ID pour le cibler est en suite stocker dans une variable JS elementBoutonValider
 */
 
-//j'affiche lelement rcuperer
+//j'affiche l'element à recuperer
 console.log(elementBoutonValider.nodeName);
 
 let elementInputNom = document.querySelector("#nom");
@@ -23,7 +23,7 @@ console.log(elementInputNom);
 console.log(document.head);
 /**
  * je recupere ce qui se trouve dans le head et je la console.log
- * document.(....) por faire appel a un element du DOM dans la console
+ * document.(....) pour faire appel a un element du DOM dans la console
 */
 console.log(document.body);
 

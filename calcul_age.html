@@ -67,12 +67,18 @@
 
             <br><br>
 
+            <div id="situationAffiche">
+                <p id=situationTexte>
+                    votre situation est:
+                </p>
+            </div>
+            
             <div>
                 <label>situation:</label>
-                <input type="checkbox" id="situation1" name="etudiant">
+                <input type="radio" id="situation1" name="etudiant" value="etudiant">
                 <label for="etudiant">étudiant</label>
       
-                <input type="checkbox" id="situation2" name="salarier">
+                <input type="radio" id="situation2" name="salarier" value="salarier">
                 <label for="salarier">Salarié</label>
             </div>
 
@@ -92,7 +98,7 @@
             </div>
             <br><br><br><br><br>
 
-            <button type="submit" value="valider" id="boutonValider"></button>
+            <button type="submit" value="valider" id="boutonValider">Envoyer</button>
         </form>
     </section>
 

@@ -1,0 +1,21 @@
+div{
+    border: 25px solid rgb(13, 135, 229);
+    background-color: rgb(13, 135, 229);
+    width: 200px;
+    height: 190px;
+    padding: 20px;
+    border-radius: 25px;
+    text-align: center;
+    display: inline-flex;
+    margin: 50px;
+}
+
+p{
+    color: rosybrown;
+    background-color: blueviolet;
+    width: 70px;
+    height: 60px;
+    padding: 100px;
+    border-radius: 25px;
+    margin: 15px;
+}
