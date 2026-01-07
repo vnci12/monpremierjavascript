@@ -4,18 +4,30 @@ div{
     width: 200px;
     height: 190px;
     padding: 20px;
-    border-radius: 25px;
-    text-align: center;
+    border-radius: 10px;
     display: inline-flex;
-    margin: 50px;
+    margin: 40px;
+    font-size: 20px;
 }
 
 p{
-    color: rosybrown;
-    background-color: blueviolet;
+    color: rgb(159, 250, 3);
+    background-color: rgb(42, 160, 228);
     width: 70px;
     height: 60px;
     padding: 100px;
     border-radius: 25px;
-    margin: 15px;
+    margin: 11px;
+}
+
+h2{
+    text-align: center;
+    color: rgb(12, 93, 243);
+}
+
+body{
+    background-image:url(madara.jpg);
+    background-position: center ;
+    background-repeat: no-repeat ;
+    background-size: cover;
 }

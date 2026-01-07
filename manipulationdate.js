@@ -12,7 +12,7 @@ elementSpanMois.textContent = maDate.getMonth();
 //affichage date complete 06/01/2025
 let elementSpanDateComplete = document.querySelector("#dateComplete");
 let jour = maDate.getDate();
-let mois = maDate.getMonth() + 1;
+let mois = maDate.getMonth();
 let annee = maDate.getFullYear();
 
 function afficherDateHeure() {
@@ -21,7 +21,7 @@ function afficherDateHeure() {
   // Date
   document.getElementById("annee").textContent = maintenant.getFullYear();
 
-  document.getElementById("mois").textContent = maintenant.getMonth() + 1;
+  document.getElementById("mois").textContent = mois;
 
   document.getElementById("jours").textContent = maintenant.getDay();
 
@@ -38,20 +38,42 @@ function afficherDateHeure() {
   document.getElementById("heureMayotte").textContent =
     new Intl.DateTimeFormat("fr-FR", {
       ...options,
-      timeZone: "Indian/Mayotte"
+      timeZone: "Indian/Mayotte",
+      weekday: "long",
+      day: "2-digit",
+      month: "long",
+      year: "numeric",
     }).format(maintenant);
 
   document.getElementById("heureParis").textContent =
     new Intl.DateTimeFormat("fr-FR", {
       ...options,
-      timeZone: "Europe/Paris"
+      timeZone: "Europe/Paris",
+      weekday: "long",
+      day: "2-digit",
+      month: "long",
+      year: "numeric",
     }).format(maintenant);
 
   document.getElementById("heureTokyo").textContent =
     new Intl.DateTimeFormat("fr-FR", {
       ...options,
-      timeZone: "Asia/Tokyo"
+      timeZone: "Asia/Tokyo",
+      weekday: "long",
+      day: "2-digit",
+      month: "long",
+      year: "numeric",
     }).format(maintenant);
+  
+  document.getElementById("heureJamaique").textContent =
+  new Intl.DateTimeFormat("fr-FR", {
+    ...options,
+    timeZone: "America/Jamaica",
+    weekday: "long",
+      day: "2-digit",
+      month: "long",
+      year: "numeric",
+  }).format(maintenant);
 }
 
 // Initialisation + mise à jour chaque seconde
